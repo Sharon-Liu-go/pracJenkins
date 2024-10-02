@@ -4,7 +4,7 @@
 APP_NAME="app.js"
 
 # 獲取正在運行的 Node.js 進程的 PID
-PID=$(pgrep -f $APP_NAME)
+PID=$(pgrep -f node $APP_NAME)
 
 if [ -n "$PID" ]; then
   echo "正在重新啟動 $APP_NAME (PID: $PID)"
