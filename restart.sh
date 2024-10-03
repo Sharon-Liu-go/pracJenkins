@@ -20,6 +20,6 @@ else
 fi
 
 # 啟動 Node.js 應用程式
-node $APP_NAME &
+/Users/sharonliu/.nvm/versions/node/v10.15.0/bin/node $APP_NAME &
 
 echo "$APP_NAME 已經啟動。"
