@@ -14,7 +14,8 @@ if [ -n "$PID" ]; then
   
   # 等待幾秒鐘以確保進程被終止
   sleep 2
-else
+else  
+  echo "$PID"
   echo "$APP_NAME 沒有運行，正在啟動..."
 fi
 
