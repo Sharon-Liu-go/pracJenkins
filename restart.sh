@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# 設定 PM2 路徑（根據 `which pm2` 結果調整）
-export PATH=$PATH:/Users/sharonliu/.nvm/versions/node/v10.15.0/bin
 
 # 設定你的 Node.js 應用程式的完整路徑
 APP_PATH="/Users/sharonliu/pracJenkins/app.js"
