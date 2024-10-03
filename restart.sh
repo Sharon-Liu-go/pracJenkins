@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# 設定你的 Node.js 應用程式的完整路徑
-APP_NAME="app"  # 設定應用名稱，以便 PM2 管理
-
+# 設定 PM2 路徑（根據 `which pm2` 結果調整）
 export PATH=$PATH:/Users/sharonliu/.nvm/versions/node/v10.15.0/bin
 
-echo $PATH
+# 設定你的 Node.js 應用程式的完整路徑
+APP_PATH="/Users/sharonliu/pracJenkins/app.js"
+APP_NAME="app"
 
 # 檢查應用是否已在 PM2 中運行
 PM2_PID=$(pm2 list | grep "$APP_NAME" | awk '{print $2}')
@@ -19,7 +19,7 @@ else
   echo "$APP_NAME 沒有運行，正在啟動..."
   
   # 使用 PM2 啟動應用
-  pm2 start app.js --name $APP_NAME
+  pm2 start $APP_PATH --name $APP_NAME
 fi
 
 # 確認應用已啟動
