@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 設定你的 Node.js 應用程式的檔案名稱
-APP_NAME="app.js"
+APP_PATH="/Users/sharonliu/pracJenkins/app.js"
 
 # 獲取正在運行的 Node.js 進程的 PID
 PID=$(pgrep -f "node $APP_NAME")
