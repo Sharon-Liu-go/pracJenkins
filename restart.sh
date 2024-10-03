@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 設定你的 Node.js 應用程式的完整路徑
-APP_PATH="/Users/sharonliu/pracJenkins/app.js"
+APP_PATH="/Users/sharonliu/pracJenkins"
 APP_NAME="app"  # 設定應用名稱，以便 PM2 管理
 
 cd $APP_PATH
@@ -19,7 +19,7 @@ else
   echo "$APP_NAME 沒有運行，正在啟動..."
   
   # 使用 PM2 啟動應用
-  pm2 start $APP_PATH --name $APP_NAME
+  pm2 start app.js --name $APP_NAME
 fi
 
 # 確認應用已啟動
