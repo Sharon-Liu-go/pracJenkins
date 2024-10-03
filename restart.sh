@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # 設定你的 Node.js 應用程式的完整路徑
-APP_PATH="/Users/sharonliu/pracJenkins"
 APP_NAME="app"  # 設定應用名稱，以便 PM2 管理
 
-cd $APP_PATH
+export PATH=$PATH:/Users/sharonliu/.nvm/versions/node/v10.15.0/bin/pm2
+
 echo $PATH
 
 # 檢查應用是否已在 PM2 中運行
