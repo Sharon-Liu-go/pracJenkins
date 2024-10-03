@@ -4,6 +4,9 @@
 APP_PATH="/Users/sharonliu/pracJenkins/app.js"
 APP_NAME="app"  # 設定應用名稱，以便 PM2 管理
 
+cd $APP_PATH
+echo $PATH
+
 # 檢查應用是否已在 PM2 中運行
 PM2_PID=$(pm2 list | grep "$APP_NAME" | awk '{print $2}')
 
