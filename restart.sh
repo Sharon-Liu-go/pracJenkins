@@ -17,6 +17,8 @@ if [ -n "$PID" ]; then
 else  
   echo "$PID"
   echo "$APP_NAME 沒有運行，正在啟動..."
+  echo "$PATH"
+
 fi
 
 # 啟動 Node.js 應用程式
